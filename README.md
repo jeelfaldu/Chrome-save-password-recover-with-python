@@ -1,2 +1,23 @@
-# Chrome-save-password-recover-with-python
-Chrome save password decrypter with python programming 
+# chrome-decrypter
+
+Python script to decrypt saved Chrome usernames and passwords on windows
+
+## Setup
+
+### Python dependencies
+
+Python 3.6 and:
+
+    python -m pip install pipenv
+
+### chrome-decrypter dependencies to run and build
+
+    pipenv install
+
+## Run
+
+    pipenv run python chrome.py
+
+## Build .exe
+
+    pipenv run pyinstaller --clean -F --distpath=. chrome.py
